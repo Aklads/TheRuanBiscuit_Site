@@ -1,0 +1,25 @@
+.head {
+    background: #1f2127;
+    padding: 5px;
+}
+
+.titulo {
+    color: #b255e7;
+    font-size: 22px;
+}
+
+body {
+    color: #fff;
+    font-size: 16px;
+    background-image: url("C:/Users/Ruan/Documents/Curso/html/assets/img/background.png");
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+footer {
+    background: #1f2127;
+    padding: 5px;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
