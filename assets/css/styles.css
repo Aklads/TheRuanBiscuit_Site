@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'brightwall';
+    src: url(../fonts/brightwall.ttf);
+}
 
-:root {/*Para usar as variaveis, usa-se var(--nome)*/
+:root {
+    /*Para usar as variaveis, usa-se var(--nome)*/
     --bg1: #212329;
     --bg2: #494F5F;
     --bg3: #D9D9D9;
     --tx1: #9966FF;
     --tx2: #BD9CFF;
     --tx3: #E4D7FF;
-} 
+}
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -46,7 +53,7 @@ body {
 }
 
 .nav-links a {
-    color:#fff;
+    color: #fff;
     text-decoration: none;
     font-size: 12px;
     padding: 8px 1px;
@@ -58,16 +65,47 @@ body {
     color: var(--tx1);
 }
 
+.container1 {
+    display:flex;
+    float:left;
+}
+
+.container2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.container2 h1 {
+    font-family: 'brightwall';
+    font-size: 24px;
+}
+
+.container2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.container2 button {
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: #fff;
+    background: var(--tx1);
+}
+
 main h1 {
+    padding-top: 60px;
     color: var(--tx1)
 }
 
 main {
-    color:#fff;
-    margin-left:10%;
-    margin-right: 10%;
+    color: #fff;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 15px;
 }
-
 
 footer {
     font-family: 'Assistant';
