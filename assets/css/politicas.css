@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'brightwall';
+    src: url(../fonts/brightwall.ttf);
+}
+
+h1 {
+    font-family: 'brightwall';
+    font-size: 36;
+}
+
+section {
+    font-size: 22;
+}

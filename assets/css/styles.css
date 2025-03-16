@@ -36,32 +36,57 @@ body {
 }
 
 .logo img {
+    padding-left: 160%;
     height: 40px;
 }
 
 .nav-links {
+    padding-right: 15%;
     color: #fff;
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-links li {
-    margin: 0;
+    position: relative;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
     font-size: 12px;
-    padding: 8px 1px;
+    padding: 10px;
     display: block;
     transition: background 0.3s;
 }
 
 .nav-links a:hover {
+    color: var(--tx1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu { /*Fazer aparecer o dropdown ao passar o mouse*/
+    display: block;
+}
+
+.dropdown-menu a:hover {
     color: var(--tx1);
 }
 
@@ -115,4 +140,14 @@ footer {
     color: #fff;
     font-size: 11px;
     text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon_redesocial img {
+    height: 15px;
+    width: 15px;
 }
