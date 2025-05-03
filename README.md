@@ -3,7 +3,7 @@
 <p align="center"> 
 Criando meu site em HTML, CSS
 
-[Clique aqui para visualizar o projeto coompleto.](https://www.figma.com/design/xaMTfsAzx2CgIUlsBQTB3f/The-Ruan-Biscuit-Site?node-id=0-1&t=rHeR0MxeIEfFScFa-1)
+[Clique aqui para visualizar o projeto completo.](https://www.figma.com/design/xaMTfsAzx2CgIUlsBQTB3f/The-Ruan-Biscuit-Site?node-id=0-1&t=rHeR0MxeIEfFScFa-1)
 </p>
 
 # Tela Inicial
