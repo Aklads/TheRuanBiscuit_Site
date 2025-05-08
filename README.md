@@ -1,9 +1,5 @@
 # Site The Ruan Biscuit
-<!-- Titulo -->
-
-> Criando meu site em HTML, CSS<br>
-> [Clique aqui para visualizar o projeto completo.](https://www.figma.com/design/xaMTfsAzx2CgIUlsBQTB3f/The-Ruan-Biscuit-Site?node-id=0-1&t=rHeR0MxeIEfFScFa-1)
-> [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Aklads)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Aklads)
 ---
 
 # Tela Inicial
@@ -15,9 +11,10 @@
 
 ---
 # Contato
-<p align="center">
-Discord: aklads
-<br>E-mail: aklads@outlook.com
-</p>
+<div>
+<a href="https://instagram.com/theruanbiscuit" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+<a href="mailto:theruanbiscuit@gmail.com"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/rubens-ruanderson-martins-malheiros-6961b1212" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+</div>
 
 ---
