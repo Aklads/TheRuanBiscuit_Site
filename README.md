@@ -1,19 +1,23 @@
 # Site The Ruan Biscuit
 <!-- Titulo -->
-> <p align="center"> 
-Criando meu site em HTML, CSS
+
+> Criando meu site em HTML, CSS<br>
 > [Clique aqui para visualizar o projeto completo.](https://www.figma.com/design/xaMTfsAzx2CgIUlsBQTB3f/The-Ruan-Biscuit-Site?node-id=0-1&t=rHeR0MxeIEfFScFa-1)
-</p>
 > [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Aklads)
+---
 
 # Tela Inicial
 ![Captura de tela 2025-03-12 090617](https://github.com/user-attachments/assets/59118efa-99a7-4372-9605-2b89cc931e8c)
 
+---
 # Páginas de detalhes
 ![Captura de tela 2025-03-12 095338](https://github.com/user-attachments/assets/7037ca47-583e-4ce0-8970-26a3e4479b27)
 
+---
 # Contato
 <p align="center">
 Discord: aklads
 <br>E-mail: aklads@outlook.com
 </p>
+
+---
