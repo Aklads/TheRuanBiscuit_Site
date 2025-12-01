@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'brightwall';
+    src: url(../fonts/brightwall.ttf);
+}
+@font-face {
+    font-family: 'varelaround';
+    src: url(../fonts/varelaround.ttf);
+}
+
+:root {
+    /*Para usar as variaveis, usa-se var(--nome)*/
+    --bg1: #212329;
+    --bg2: #494F5F;
+    --bg3: #D9D9D9;
+    --tx1: #9966FF;
+    --tx2: #BD9CFF;
+    --tx3: #E4D7FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /*Coloca os filhos em coluna*/
+    font-family: 'Assistant';
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /*Define o corpo da págia para ocupar pelo menos 100% da altura do viewport*/
+}
+
+
+header {
+    background: var(--bg1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 67px;
+    width: 263px;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg1);
+    padding: 10px 20px;
+}
+
+.nav-links {
+    padding-right: 15%;
+    color: var(--bg3);
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+.nav-links li, a {
+    position: relative;
+    color: var(--bg3);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--tx1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: var(--bg3);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {/*Fazer aparecer o dropdown ao passar o mouse*/
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color:var(--tx1)
+}
+
+main {
+    flex-grow: 1; /*Ocupa todo o espaço vertical disponível, empurrando o footer para baixo*/
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center top; /*C entraliza a imagem no topo*/
+    background-size: cover; /*Garante que a imagm cubra toda a área sendo responsiva*/
+    font-family: 'Assistant';
+    font-size: 16px;
+}
+
+.conteudo-principal {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo-principal-img {
+    max-width: 230px;
+    max-height: 230px;
+    transition: transform 0.5s ease; /*Adiciona a transição suave de 0.5 segundos*/
+}
+
+.conteudo-principal-img:hover {
+    transform: scale(1.5) /*Aumenta a imagem em 50% (1.5 vezes o tamanho original*/
+}
+
+.conteudo-principal-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.conteudo-principal-titulo {
+    display: -ms-inline-flexbox;
+    justify-content: center;
+    font-family: 'brightwall';
+    font-size: 36px;
+    color: var(--tx1);
+}
+
+.conteudo-principal-legenda {
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    color: var(--bg3)
+}
+
+.conteudo-principal-botao {
+    font-family: 'Assistant';
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #fff;
+    background: var(--tx2);
+}
+
+.conteudo-principal-botao:hover {
+    background: var(--tx1);
+    cursor: pointer;
+}
+
+.conteudo-secundario {
+    margin-left: 15%;
+    margin-right: 15%;
+    color: var(--bg3);
+}
+
+.conteudo-secundario ul {
+    margin-left: 5%;
+}
+
+.conteudo-secundario h2 {
+    color: var(--tx1)
+}
+
+footer {
+    margin-top: auto;/*Garane que o footer sempre fique na parte inferior*/
+    font-family: 'Assistant';
+    background: var(--bg1);
+    padding: 10px;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer img {
+    height: 15px;
+    width: 15px;
+}
+
+.footer-icons-redesocial {
+    display:flex;
+    justify-content: center;
+}
