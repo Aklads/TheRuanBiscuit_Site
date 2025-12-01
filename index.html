@@ -1,72 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content ="width=device-width, initial-scale=1.0"> <!-- Ajustar conteúdo de acordo com o dispositivo -->
-        <meta name="description" content="Este é o meu primeiro site."> <!-- Descrição para thumbnail de compartilhamento -->
-        <meta name="keywords" content="biscuit, porcelana fria, artesanato, loja, miniaturas, personalizados"> <!-- Palavras chaes para melhorar o SEO do website -->
-        <meta name="author" content="Ruanderson Martins">
-        <title>The Ruan Biscuit | Início</title>
-        <link rel="stylesheet" href="./assets/css/styles.css"> <!-- Vincular CSS-->
-        <link rel="stylesheet" href="./assets/css/pedido.css">
-        <script src="./assets/js/index.js"></script>
-        <link rel="icon" type="image/x-cion" href="./assets/img/trb3.png"> <!-- Favicon da Página -->
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ruanderson Martins">
+    <meta name="description" content="Peças em Biscuit (Porcelana Fria) sob encomenda. Desenvolvemos modelos únicos nos estilos Chibi e Anime. Entre em contato para um orçamento e adicione itens exclusivos à sua coleção.">
+    <meta name="keywords" content="biscuit,porcelana fria,artesanato,loja,miniatura,personalizados,anime,chibi,doll,coleção">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.webp">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>The Ruan Biscuit | Início</title>
+</head>
+<body>
+    <header> <!-- Logo e Navbar -->
+        <a href="./index.html>"><img class="logo" src="./assets/img/trb.webp" alt="Logomarca The Ruan Biscuit"></a>
         <nav class="navbar">
-            <div class="logo">
-                <a href="./index.html"><img src="./assets/img/trb.webp" alt="Logo The Ruan Biscuit"></a>
-            </div>
-            <ul class="nav-links">
+            <ul class="nav-links"> <!-- Navbar -->
                 <li><a href="./index.html">Início</a></li>
-                <li class="dropdown">
-                    <a>Estilos</a>
+                <li class="dropdown"><a>Estilos</a> <!-- Dropdown -->
                     <ul class="dropdown-menu">
-                        <li><a href="./pages/estilos/chibi.html">Chibi</a></li>
                         <li><a href="./pages/estilos/anime.html">Anime</a></li>
-                        <li><a href="./pages/estilos/doll.html">Doll</a></li>
-                        <li><a href="./pages/estilos/pop.html">Pop</a></li>                
+                        <li><a href="./pages/estilos/chibi.html">Chibi</a></li>
                     </ul>
                 </li>
                 <li><a href="./pages/outros/contato.html">Contato</a></li>
             </ul>
         </nav>
-        <main>
-            <div class="container1">
-              <img src="./assets/img/luffyg5.webp" alt="Miniatura de porcelana fria do personagem Luffy, de One Piece" height="210" width="210">
+    </header>
+    <main>
+        <section class="conteudo-principal"> <!-- Imagem e botão de solicitar orçamento -->
+            <a href="./index.html"><img class="conteudo-principal-img" src="./assets/img/luffyg5.webp" alt="Miniatura do personagem Luffy Gear Five do anime One Piece em biscuit feito por The Ruan Biscuit"></a> <!-- Ao clicar aumentar zoom -->
+            <div class="conteudo-principal-textos">
+                <h1 class="conteudo-principal-titulo">Miniaturas Personalizadas</h1>
+                <p class="conteudo-principal-legenda">Agenda aberta para orçamentos e encomendas</p>
+                <button class="conteudo-principal-botao">Solicitar orçamento</button> <!-- Abrir janela com formulário de solicitação de orçamento -->
             </div>
-            <div class="container2">
-              <h1>Miniaturas Personalizadas</h1>
-              <p>Agenda aberta para orçamentos e encomendas.</p>
-              <a href="#"><button><b>FAZER PEDIDO</b></button></a>
-            </div>
-            <section>
-            <h1>O que é biscuit?</h1>
-            <p><br>Biscuit é o nome que damos, às peças que são modeladas em porcelana fria. A confecção é feita a mão, e a secagem da peça é feita em contato com o ar. Sendo assim, não precisam ser aquecidas em um forno para ficarem rígidas.
-                <br>As peças de biscuit podem ser completamente personalizadas de acordo com cada cliente e são únicas, mesmo que a mesma figura seja feita mais de uma vez, possuem características diferentes por serem confeccionadas a mão.
-                <br>Atualmente faço biscuit em Campinas e biscuit em Hortolândia. Visite meu catálogo e faça um orçamento sem compromisso. 😊</p>
-            <p><br><strong>Dicas para cuidar da sua peça de biscuit:</strong></p>
-            <p><br><ul>
+        </section>
+        <section class="conteudo-secundario">
+            <h2>O que é biscuit?</h2>
+            <p><strong>Biscuit</strong> é o nome que damos, às peças que são modeladas em porcelana fria. A confecção é feita a mão, e a secagem da peça é feita em contato com o ar. Sendo assim, não precisam ser aquecidas em um forno para ficarem rígidas.<br>
+            As peças de biscuit podem ser completamente personalizadas de acordo com cada cliente e são únicas, mesmo que a mesma figura seja feita mais de uma vez, possuem características diferentes por serem confeccionadas a mão.<br>
+
+            <strong>Atualmente faço biscuit na cidade de Campinas e Hortolândia. Visite meu catálogo e faça um orçamento sem compromisso.</strong></p>
+
+            <br><p><strong>Dicas para cuidar da sua peça de biscuit:</strong></p>
+            <ul>
                 <li>Não deixar cair no chão, algumas peças podem haver acessórios ou detalhes delicados;</li>
                 <li>Não molhar ou ficar ao relento, guarde em um local protegido e limpo;</li>
-                <li>Limpe somente com pincel ou lenço levemente umedecido;</li>
+                <li>Limpe somente com pincel ou lenço umedecido;</li>
                 <li>Evite o contato direto da sua peça com produtos químicos;</li>
-                <li>Não deixar cair no chão, algumas peças podem haver acessórios ou detalhes delicados;</li>
-                <li>Não molhar ou ficar ao relento, guarde em um local protegido do sol e limpo;</li>
-                <li>Limpe somente com pincel macio ou lenço levemente umedecido;</li>
-            </ul></p>
-            <p><br>Simples, não acha? Com essas pequenas dicas você poderá ter sua peça por muitos anos!</p>
-            </section>
-        </main>
-        <footer>
-            <div class="icon_redesocial">
-                <a href="https://www.instagram.com/theruanbiscuit" target="_blank" alt="Logo do instagram para perfil da The Ruan Biscuit"><img src="./assets/img/instagram.png"></a>
-                <a href="https://www.facebook.com/theruanbiscuit" target="_blank" alt="Logo do facebook para perfil da The Ruan Biscuit"><img src="./assets/img/facebook.png"></a>
-            </div>
-            <a href="mailto:contato.theruanbiscuit@gmail.com">contato.theruanbiscuit@gmail.com</a>
-            <br>The Ruan Biscuit 2023. Todos os direitos reservados.
-            <br><a href="./pages/politicas/privacidade.html">Políticas de Privacidade</a> | <a href="./pages/politicas/termosecondicoes.html">Termos e Condições</a> | <a href="./pages/politicas/cookies.html">Cookies e Dados.</a>
-        </footer>
-    </body>
-
+            </ul>
+            <br><p>Simples, não acha? Com essas pequenas dicas você poderá ter sua peça por muitos anos!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-icons-redesocial">
+            <a href="https://www.instagram.com/theruanbiscuit"><img src="./assets/img/instagram.png" alt="Logo do instagram para acessar o perfil The Ruan Biscuit"></a>
+            <a href="https://www.facebook.com/theruanbiscuit"><img src="./assets/img/facebook.png" alt="Logo do facebook para acessar o perfil The Ruan Biscuit"></a>
+        </div>
+        <a href="mailto:contato.theruanbiscuit@gmail.com">contato.theruanbiscuit@gmail.com</a>
+        The Ruan Biscuit 2023. Todos os direitos reservados.
+        <br><p><a href="./pages/politicas/privacidade.html">Políticas de Privacidade</a><a href="./pages/politicas/termosecondicoes.html">Termos e Condições</a><a href="./pages/politicas/cookies.html">Cookies e Dados</a></p>
+    </footer>
+</body>
 </html>
