@@ -5,11 +5,11 @@
 ---
 
 # Tela Inicial
-![Captura de tela 2025-03-12 090617](https://github.com/user-attachments/assets/59118efa-99a7-4372-9605-2b89cc931e8c)
+![Captura de tela 2025-03-12 090617](https://github.com/user-attachments/assets/ec2a7922-4fe4-40e7-b0be-5ac784e69aa4)
 
 ---
 # Páginas de detalhes
-![Captura de tela 2025-03-12 095338](https://github.com/user-attachments/assets/7037ca47-583e-4ce0-8970-26a3e4479b27)
+![Captura de tela 2025-03-12 095338](https://github.com/user-attachments/assets/1af99aa1-50f9-42f2-8ea8-383ded91ea30)
 
 ---
 # Contato
