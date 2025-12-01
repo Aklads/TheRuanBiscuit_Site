@@ -3,12 +3,229 @@
     font-family: 'brightwall';
     src: url(../fonts/brightwall.ttf);
 }
-
-h1 {
-    font-family: 'brightwall';
-    font-size: 36;
+@font-face {
+    font-family: 'varelaround';
+    src: url(../fonts/varelaround.ttf);
 }
 
-section {
-    font-size: 22;
+:root {
+    /*Para usar as variaveis, usa-se var(--nome)*/
+    --bg1: #212329;
+    --bg2: #494F5F;
+    --bg3: #D9D9D9;
+    --tx1: #9966FF;
+    --tx2: #BD9CFF;
+    --tx3: #E4D7FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /*Coloca os filhos em coluna*/
+    font-family: 'Assistant';
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /*Define o corpo da págia para ocupar pelo menos 100% da altura do viewport*/
+}
+
+
+header {
+    background: var(--bg1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 67px;
+    width: 263px;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg1);
+    padding: 10px 20px;
+}
+
+.nav-links {
+    padding-right: 15%;
+    color: var(--bg3);
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+.nav-links li, a {
+    position: relative;
+    color: var(--bg3);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--tx1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: var(--bg3);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {/*Fazer aparecer o dropdown ao passar o mouse*/
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color:var(--tx1)
+}
+
+main {
+    flex-grow: 1; /*Ocupa todo o espaço vertical disponível, empurrando o footer para baixo*/
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center top; /*C entraliza a imagem no topo*/
+    background-size: cover; /*Garante que a imagm cubra toda a área sendo responsiva*/
+    font-family: 'Assistant';
+    font-size: 16px;
+}
+
+.conteiner-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagens {
+    display: flex;
+    margin-right: 15%;
+    flex-direction: column;
+}
+
+.imagens-1 {
+    position: relative;
+    left: -120px;
+    bottom: -80px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+
+.imagens-1:hover {
+    transform: scale(1.3);
+}
+
+.imagens-2 {
+    width: 330px;
+    height: 330px;
+    transition: transform 0.5s ease;
+}
+
+.imagens-2:hover {
+    transform: scale(1.3);
+}
+
+.imagens-3 {
+    position: relative;
+    left: -170px;
+    top: -80px;
+    width: 370px;
+    height: 370px;
+    transition: transform 0.5s ease;
+}
+
+.imagens-3:hover {
+    transform: scale(1.3);
+}
+
+.conteudo-principal-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 20%;
+    color: var(--bg3);
+}
+
+.conteudo-principal-titulo {
+    font-family: 'brightwall';
+    color: var(--tx1);
+}
+
+.conteudo-principal li, .conteudo-secundario li {
+    margin-left: 5%;
+}
+
+.conteudo-secundario {
+    margin-top: 10px;
+}
+
+.conteudo-secundario-titulo {
+    font-family: 'brightwall';
+    color: var(--tx1);
+}
+
+.conteudo-secundario-botao {
+    font-family: 'Assistant';
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: #fff;
+    background: var(--tx2);
+}
+
+.conteudo-secundario-botao:hover {
+    background: var(--tx1);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: auto;/*Garane que o footer sempre fique na parte inferior*/
+    font-family: 'Assistant';
+    background: var(--bg1);
+    padding: 10px;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer img {
+    height: 15px;
+    width: 15px;
+}
+
+.footer-icons-redesocial {
+    display:flex;
+    justify-content: center;
 }
