@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'brightwall';
+    src: url(../fonts/brightwall.ttf);
+}
+@font-face {
+    font-family: 'varelaround';
+    src: url(../fonts/varelaround.ttf);
+}
+
+:root {
+    /*Para usar as variaveis, usa-se var(--nome)*/
+    --bg1: #212329;
+    --bg2: #494F5F;
+    --bg3: #D9D9D9;
+    --tx1: #9966FF;
+    --tx2: #BD9CFF;
+    --tx3: #E4D7FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /*Coloca os filhos em coluna*/
+    font-family: 'Assistant';
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /*Define o corpo da págia para ocupar pelo menos 100% da altura do viewport*/
+}
+
+header {
+    background: var(--bg1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 67px;
+    width: 263px;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg1);
+    padding: 10px 20px;
+}
+
+.nav-links {
+    padding-right: 15%;
+    color: var(--bg3);
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+.nav-links li, a {
+    position: relative;
+    color: var(--bg3);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--tx1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: var(--bg3);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {/*Fazer aparecer o dropdown ao passar o mouse*/
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color:var(--tx1)
+}
+
+main {
+    flex-grow: 1; /*Ocupa todo o espaço vertical disponível, empurrando o footer para baixo*/
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center top; /*C entraliza a imagem no topo*/
+    background-size: cover; /*Garante que a imagm cubra toda a área sendo responsiva*/
+    font-family: 'Assistant';
+    font-size: 16px;
+}
+
+.conteudo-principal {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--bg3);
+}
+
+.conteudo-principal-titulo {
+    font-family: 'brightwall';
+    color: var(--tx1);
+    font-size: 36;
+}
+
+.conteudo-principal-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nomec {
+    color: var(--bg3);
+    padding: 5px;
+    background: transparent;
+    border: solid 1px var(--bg3);
+    border-radius: 10px;
+}
+
+.email {
+    color: var(--bg3);
+    padding: 5px;
+    background: transparent;
+    border: solid 1px var(--bg3);
+    border-radius: 10px;
+}
+
+.mensagem {
+    color: var(--bg3);
+    padding: 5px;
+    background: transparent;
+    border: solid 1px var(--bg3);
+    border-radius: 10px;
+}
+
+.button {
+    padding: 5px;
+    color: var(--bg3);
+    border-radius: 10px;
+    background: var(--tx2);
+}
+
+.button:hover {
+    cursor: pointer;
+    background: var(--tx1);
+}
+
+.conteudo-principal-redessociais-caixa {
+    padding-top: 2.5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg2);
+    border-radius: 5px;
+}
+
+.conteudo-principal-redessociais-caixa img {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    margin-top: auto;/*Garane que o footer sempre fique na parte inferior*/
+    font-family: 'Assistant';
+    background: var(--bg1);
+    padding: 10px;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer img {
+    height: 15px;
+    width: 15px;
+}
+
+.footer-icons-redesocial {
+    display:flex;
+    justify-content: center;
+}
