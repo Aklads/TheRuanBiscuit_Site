@@ -8,6 +8,18 @@
     src: url(../fonts/varelaround.ttf);
 }
 
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+}
+
 :root {
     /*Para usar as variaveis, usa-se var(--nome)*/
     --bg1: #212329;
@@ -125,7 +137,7 @@ main {
 }
 
 .conteudo-principal-img:hover {
-    transform: scale(1.5) /*Aumenta a imagem em 50% (1.5 vezes o tamanho original*/
+    transform: scale(1.5); /*Aumenta a imagem em 50% (1.5 vezes o tamanho original*/
 }
 
 .conteudo-principal-textos {
@@ -171,8 +183,8 @@ main {
     color: var(--bg3);
 }
 
-.conteudo-secundario ul {
-    margin-left: 5%;
+.conteudo-secundario li {
+    margin-left: 2.5%;
 }
 
 .conteudo-secundario h2 {
@@ -193,6 +205,7 @@ footer p {
     display:flex;
     justify-content: center;
     text-decoration: none;
+    text-align: center;
     color: #fff;
 }
 
@@ -205,3 +218,4 @@ footer img {
     display:flex;
     justify-content: center;
 }
+
